@@ -66,3 +66,6 @@ Swagger Docs → http://localhost:8000/docs
 ## Test API Endpoint
 
 POST -F "file=@Test/sample.jpg" http://localhost:8000/predict
+
+## FrontEnd
+localhost:3000
