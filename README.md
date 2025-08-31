@@ -48,3 +48,21 @@ skin_cancer/
 │── Test/ # Testing dataset
 │── classification.ipynb # Jupyter notebook (model training)
 │── README.md
+
+
+
+## Prerequisites
+
+Python 3.10+
+
+Node.js 18+ and npm
+
+## Run Fast API Server
+
+uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
+Swagger Docs → http://localhost:8000/docs
+
+
+## Test API Endpoint
+
+POST -F "file=@Test/sample.jpg" http://localhost:8000/predict
